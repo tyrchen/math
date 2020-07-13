@@ -321,4 +321,9 @@ section[data-marpit-advanced-background-split] {
   padding: 30px;
 }
 
+section .answer {
+  color: white;
+  border: 1px solid black;
+}
+
 /* @import url('https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.10/styles/default.min.css'); */

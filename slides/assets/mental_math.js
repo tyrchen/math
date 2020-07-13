@@ -72,9 +72,15 @@ class MentalMath {
 
     // render the result
     render(id, data) {
-        const html = data.map(item => `<p style="font-size: 120px; line-height: 300px"><b>${item.a}</b> ${item.op} <b>${item.b}</b> = <span style="color: white; border: 1px solid black">${item.ret}</span></p>`).join('');
+        const html = data.map(item => `<p style="font-size: 120px; line-height: 300px"><b>${item.a}</b> ${item.op} <b>${item.b}</b> = <span class="answer">${item.ret}</span></p>`).join('');
         const el = document.getElementById(id).getElementsByTagName('div')[0];
         el.innerHTML = html;
+    }
+
+    // reveal the answer
+    showAnswer(id) {
+        const el = document.getElementById(id).getElementsByClassName('answer')[0];
+        if (el && el.classList.contains('answer')) el.classList.remove('answer');
     }
 
     // private functions

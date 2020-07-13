@@ -4,8 +4,12 @@ title: 心算
 theme: uncover
 paginate: true
 ---
+
+<!-- backgroundColor: white -->
+
 <script src="assets/mental_math.js"></script>
 <script>
+document.getElementsByClassName("bespoke-marp-osc")[0].remove();
 const mm = new MentalMath();
 </script>
 
@@ -23,8 +27,7 @@ const mm = new MentalMath();
 
 ---
 
-### 两位数加法
-
+### 两位数加法 <a href="#" onclick="mm.showAnswer('2');return false;">显示答案</a>
 <div></div>
 
 <script>
@@ -36,7 +39,7 @@ mm.render('2', mm.addTens());
 
 ---
 
-### 三位数加法
+### 三位数加法 <a href="#" onclick="mm.showAnswer('3');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -47,7 +50,7 @@ mm.render('3', mm.addHundreds());
 </p>
 
 ---
-### 和为一百的补数
+### 和为一百的补数 <a href="#" onclick="mm.showAnswer('4');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -58,7 +61,7 @@ mm.render('4', mm.complementNumberBy100());
 </p>
 
 ---
-### 和为一千的补数
+### 和为一千的补数 <a href="#" onclick="mm.showAnswer('5');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -70,7 +73,7 @@ mm.render('5', mm.complementNumberBy1000());
 
 ---
 
-### 乘十一
+### 乘十一 <a href="#" onclick="mm.showAnswer('6');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -82,7 +85,7 @@ mm.render('6', mm.multiplyBy11());
 
 ---
 
-### 结尾是五的平方
+### 结尾是五的平方 <a href="#" onclick="mm.showAnswer('7');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -94,7 +97,7 @@ mm.render('7', mm.squareEndsWith5());
 
 ---
 
-### 十位数相同末尾互补的两数乘积
+### 十位数相同末尾互补的两数乘积 <a href="#" onclick="mm.showAnswer('8');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -106,7 +109,7 @@ mm.render('8', mm.specialMultiply());
 
 ---
 
-### 二十以内的乘法
+### 二十以内的乘法 <a href="#" onclick="mm.showAnswer('9');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -118,7 +121,7 @@ mm.render('9', mm.multiply20());
 
 ---
 
-### 两位数乘一位数
+### 两位数乘一位数 <a href="#" onclick="mm.showAnswer('10');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -130,7 +133,7 @@ mm.render('10', mm.multiply2and1());
 
 ---
 
-### 三位数乘两位数
+### 三位数乘一位数 <a href="#" onclick="mm.showAnswer('11');return false;">显示答案</a>
 
 <div></div>
 <script>
@@ -142,7 +145,7 @@ mm.render('11', mm.multiply3and1());
 
 ---
 
-### 两位数乘两位数
+### 两位数乘两位数 <a href="#" onclick="mm.showAnswer('12');return false;">显示答案</a>
 
 <div></div>
 <script>
